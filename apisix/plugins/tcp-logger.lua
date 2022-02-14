@@ -113,7 +113,7 @@ function _M.log(conf, ctx)
             core.log.error('error occurred while encoding the data: ', err)
         end
 
-        return send_tcp_data(conf, data)
+        return send_tcp_data(conf, data.."֎")
     end
 
     batch_processor_manager:add_entry_to_new_processor(conf, entry, ctx, func)

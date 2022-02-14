@@ -630,7 +630,7 @@ http {
             proxy_set_header   X-Forwarded-For      $var_x_forwarded_for;
             proxy_set_header   X-Forwarded-Proto    $var_x_forwarded_proto;
             proxy_set_header   X-Forwarded-Host     $var_x_forwarded_host;
-            proxy_set_header   X-Forwarded-Port     $var_x_forwarded_port;
+            #proxy_set_header   X-Forwarded-Port     $var_x_forwarded_port;
 
             {% if enabled_plugins["proxy-cache"] then %}
             ###  the following configuration is to cache response content from upstream server
