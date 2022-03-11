@@ -21,14 +21,6 @@ title: opentelemetry
 #
 -->
 
-## Summary
-
-- [**Name**](#name)
-- [**Attributes**](#attributes)
-- [**How To Enable**](#how-to-enable)
-- [**How to set collecting**](#how-to-set-collecting)
-- [**Disable Plugin**](#disable-plugin)
-
 ## Name
 
 [OpenTelemetry](https://opentelemetry.io/) report Tracing data according to [opentelemetry specification](https://github.com/open-telemetry/opentelemetry-specification).
@@ -74,8 +66,8 @@ curl http://127.0.0.1:9080/apisix/admin/routes/1  -H 'X-API-KEY: edd1c9f034335f1
     ],
     "plugins": {
         "opentelemetry": {
-            sampler": {
-                "name": "always_on",
+            "sampler": {
+                "name": "always_on"
             }
         }
     },

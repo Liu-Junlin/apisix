@@ -178,8 +178,6 @@ passed
             ngx.say(body)
         }
     }
---- request
-GET /t
 --- response_body
 passed
 
@@ -212,9 +210,7 @@ passed
 --- response_body
 failed to sign jwt
 --- error_code: 503
---- error_log eval
-qr/failed to sign jwt, err: secret could not found in vault/
---- grep_error_log_out
+--- error_log
 failed to sign jwt, err: secret could not found in vault
 
 
